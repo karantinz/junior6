@@ -1,5 +1,5 @@
 ﻿int gold;
-int crystal = 0;
+int crystalCount = 0;
 int crystalPrice = 10;
 
 Console.WriteLine("Сколько у вас золота");
@@ -10,9 +10,9 @@ Console.WriteLine("Сколько хотите купить");
 
 int crystalBuy = Convert.ToInt32(Console.ReadLine());
 
-gold = gold - crystalPrice * crystalBuy;
+gold -= crystalPrice * crystalBuy;
 
-crystal += crystalBuy;
+crystalCount += crystalBuy;
 
 Console.WriteLine("Остаток золота: " + gold);
-Console.WriteLine("Кристаллы: " + crystal);
+Console.WriteLine("Кристаллы: " + crystalCount);
